@@ -1,0 +1,45 @@
+.not-found__text {
+	text-align: center;
+}
+
+.not-found__image-item {
+	width : 100%;
+	height: auto;
+}
+
+.not-found__title {
+	font-weight: 900;
+	font-size  : 3.25rem;
+	line-height: 61px;
+	overflow: hidden;
+}
+
+.not-found__paragrah {
+	font-weight: 900;
+	font-size  : 17px;
+	line-height: 26px;
+	color      : #6E84A3;
+	max-width  : 19rem;
+	margin: 0 auto;
+	padding-bottom: 2rem;
+}
+
+.not-found__btn {
+	margin     : 0 auto;
+	max-width  : 150px;
+	padding    : 1rem 1.25rem;
+	font-weight: 900;
+	font-size  : 17px;
+	line-height: 26px;
+}
+
+@media only screen and (min-width: 992px) {
+	.not-found {
+		display    : flex;
+		align-items: center;
+	}
+
+	.not-found__text {
+		width: 50%;
+	}
+}

@@ -1,0 +1,115 @@
+@import './global/_settings';
+
+.header {
+	background-color: $white;
+
+	&__wrap {
+		position: relative;
+		overflow: hidden;
+	}
+}
+
+
+/* Hamburger Menu
+      ============================= */
+
+.respmenu__input[type="checkbox"],
+.respmenu__bars,
+.respmenu__x {
+	position  : absolute;
+	box-sizing: border-box;
+	margin    : 0;
+	padding   : 0;
+	right     : 1rem;
+	top       : 1rem;
+	width     : 20px;
+	height    : 14px;
+}
+
+.respmenu__bars,
+.respmenu__x {
+	font-size     : var(--font-size-xlarge);
+	pointer-events: none;
+}
+
+.respmenu__input[type="checkbox"] {
+	opacity: 0;
+}
+
+.navbar-menu {
+	display: none;
+}
+
+.respmenu__input:checked~.navbar-menu {
+	display: block;
+}
+
+.respmenu__input:checked~.respmenu__bars {
+	display: none;
+}
+
+.respmenu__input:not(:checked)~.respmenu__x {
+	display: none;
+}
+
+/* Navbar
+      ============================= */
+
+.navbar-menu {
+	text-align : center;
+	padding-top: 2rem;
+
+	&__item {
+		display: block;
+	}
+
+	&__link {
+		display    : block;
+		padding    : 1.5rem 0;
+		position   : relative;
+		color      : $blue;
+		font-size  : 1rem;
+		font-weight: 900;
+	}
+
+	&__link:hover {
+		color: $grey;
+	}
+}
+
+.navbar-menu__item:hover .navbar-menu__link::before {
+	background-color: var(--color-primary);
+	width           : 100%;
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media screen and (min-width: 768px) {
+
+	.navbar-menu {
+		display    : block;
+		position   : absolute;
+		top        : -0.5rem;
+		left       : 35%;
+		padding-top: 0;
+	}
+
+	.respmenu__bars {
+		display: none;
+	}
+
+	.respmenu__x {
+		display: none;
+	}
+
+	.navbar-menu__list {
+		display: flex;
+	}
+
+	.navbar-menu__item {
+		padding: 0 1rem;
+	}
+
+	.header__logo {
+		display    : flex;
+	}
+}
