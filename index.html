@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="/images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="styles/styles.css">
+	<title>Landkit</title>
+</head>
+
+<body>
+	<!-- Header -->
+	<header class="header">
+		<div class="container">
+			<div class="header__wrap">
+				<div class="header__logo">
+					<a href="/">
+						<img src="images/logo.svg" alt="company logo">
+					</a>
+				</div>
+				<div class="respmenu">
+					<input class="respmenu__input" type="checkbox">
+					<svg class="respmenu__bars" width="20" height="14" viewBox="0 0 20 14" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path fill-rule="evenodd" clip-rule="evenodd"
+							d="M0 1C0 0.447715 0.447715 0 1 0H19C19.5523 0 20 0.447715 20 1C20 1.55228 19.5523 2 19 2H1C0.447715 2 0 1.55228 0 1ZM0 7C0 6.44772 0.447715 6 1 6H12C12.5523 6 13 6.44772 13 7C13 7.55228 12.5523 8 12 8H1C0.447715 8 0 7.55228 0 7ZM1 12C0.447715 12 0 12.4477 0 13C0 13.5523 0.447716 14 1 14H17C17.5523 14 18 13.5523 18 13C18 12.4477 17.5523 12 17 12H1Z"
+							fill="#335EEA" />
+					</svg>
+					<svg class="respmenu__x" width="21" height="21" viewBox="0 0 21 21" fill="none"
+						xmlns="http://www.w3.org/2000/svg">
+						<path d="M1.51465 2.01465L18.4852 18.9852" stroke="#335EEA" stroke-width="3" stroke-linecap="round" />
+						<path d="M2 18.9706L18.9706 2" stroke="#335EEA" stroke-width="3" stroke-linecap="round" />
+					</svg>
+					<nav class="navbar-menu">
+						<ul class="navbar-menu__list">
+							<li class="navbar-menu__item"><a href="#" class="navbar-menu__link"><span>Articles</span></a></li>
+							<li class="navbar-menu__item"><a href="#" class="navbar-menu__link"><span>Favorites</span></a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+		</div>
+
+	</header>
+	<!-- Banner -->
+	<main class="main">
+		<section class="banner">
+			<div class="container">
+				<div class="search">
+					<div class="content">
+						<img src="images/search.svg" alt="search icon">
+						<input type="text" placeholder="Search" class="content__text js-search">
+					</div>
+					<div class="results">
+						<label class="results__numbers js-totalResults"></label>
+						<a href="#" class="results__link">Search</a>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Card -->
+		<section>
+			<div class="container">
+				<div class="card">
+					<img src="https://picsum.photos/640/426" alt="" class="card__img">
+					<div class="card__body">
+						<h4 class="card__title" <b>Keeping the dream alive by traveling the world.</b></h4>
+						<p class="card__text">Integrate the latest technologies with an innovative platform...</p>
+					</div>
+					<hr class="card__hr">
+					<div class="card__footer">
+						<div class="card__name">
+							<img src="images/profile1.jpg" alt="profile picture" class="card__profile">
+							<span>ALIVE COOPER</span>
+						</div>
+						<div class="card__date">
+							<span>MAY 02</span>
+						</div>
+					</div>
+					<img src="images/stars.svg" alt="star icon" class="card__star">
+					<span class="card__price">$49/MO</span>
+				</div>
+
+				<!--Load more button-->
+				<div class="loadmore">
+					<button class="load-more">
+						<span></span>
+						<span>Load More</span>
+						<img src="images/arrow.svg" alt="arrow icon" class="loadmore__arrow"></button>
+				</div>
+
+				<!--Not Found-->
+				<div class="not-found">
+					<div class="not-found__text">
+						<h4 class="not-found__title">Uh oh.</h4>
+						<p class="not-found__paragrah">We ran into an issue, but don’t worry, we’ll take care of it for sure.</p>
+						<a href="#" class="results__link not-found__btn">Back to safety</a>
+					</div>
+					<div class="not-found__image">
+						<img src="images/not-found-img.png" alt="not found image" class="not-found__image-item">
+					</div>
+				</div>
+
+				<!--info-->
+				<div class="info">
+					<div class="info__Text">
+						<h4 class="info__tilte">Should I work remotely or will it put a strain on my long-term career?</h4>
+						<p class="info__paragrah">
+							As part of our ongoing effort to enhance the traveler journey, we’re proud to partner with Portland
+							International Airport (PDX) on the launch of a pilot program designed to shorten rider wait times at
+							pickup.
+						</p>
+					</div>
+					<div class="info__profile">
+						<div class="info__user-data">
+							<img src="images/profile3.jpg" alt="profile image" class="card__profile info__img">
+							<div class="info__content">
+								<span class="info__name">ALICE COOPER</span>
+								<span class="info__date">Published on May 20, 2019</span>
+							</div>
+						</div>
+						<div class="info__social">
+							<span class="info__share">SHARE:</span>
+							<a href="#" class="info__social-link">
+								<img src="images/instagram.svg" alt="instagram logo">
+							</a>
+							<a href="#" class="info__social-link">
+								<img src="images/facebook.svg" alt="facebook logo">
+							</a>
+							<a href="#" class="info__social-link">
+								<img src="images/twitter.svg" alt="twitter logo">
+							</a>
+						</div>
+					</div>
+					<div class="info__text2">
+						<img src="https://picsum.photos/640/426" alt="photo reference" class="info__img-text">
+						<p class="info__text2-refe">This is a caption on this photo for reference</p>
+						<p class="info__text2-paragrah">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+							rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+							explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+							consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. <br><br>
+
+							Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non
+							numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad
+							minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea
+							commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil
+							molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</main>
+</body>
+
+</html>
